@@ -139,6 +139,7 @@
     </div>
   </section>
 
+<div class="home-below-hero">
 <!-- section 2 -->
  <section class="home-section home-section--shift">
    <div class="home-section-inner">
@@ -204,7 +205,7 @@
      </p>
     </div>
     <div class="home-section-visual" aria-hidden="true">
-      <img src="assets/img/Mobile%20frame.png" alt="" class="home-section-img home-section-img--mobile-frame" loading="lazy" decoding="async">
+      <img src="mobileImage.png" alt="" class="home-section-img home-section-img--mobile-frame" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
@@ -226,7 +227,7 @@
      </p>
     </div>
     <div class="home-section-visual" aria-hidden="true">
-      <img src="assets/img/Mobile%20frame.png" alt="" class="home-section-img home-section-img--mobile-frame" loading="lazy" decoding="async">
+      <img src="mobileImage.png" alt="" class="home-section-img home-section-img--mobile-frame" loading="lazy" decoding="async">
     </div>
   </div>
   <div class="home-section-sub-inner">
@@ -336,7 +337,10 @@
       </ul>
     </div>
     <div class="home-section-visual" aria-hidden="true">
-     <img src="assets/img/Placeholder.png" alt="" class="home-section-img" width="600" height="400" loading="lazy" decoding="async">
+     <picture>
+       <source media="(max-width: 760px)" srcset="mobileImage.png">
+       <img src="webImage.png" alt="" class="home-section-img" width="600" height="400" loading="lazy" decoding="async">
+     </picture>
    </div>
   </div>
 </section>
@@ -357,7 +361,10 @@
        </div>
      </div>
      <div class="home-section-visual" aria-hidden="true">
-      <img src="assets/img/Placeholder.png" alt="" class="home-section-img" width="600" height="400" loading="lazy" decoding="async">
+      <picture>
+        <source media="(max-width: 760px)" srcset="mobileImage.png">
+        <img src="webImage.png" alt="" class="home-section-img" width="600" height="400" loading="lazy" decoding="async">
+      </picture>
     </div>
    </div>
  </section>
@@ -377,10 +384,14 @@
       </div>
     </div>
     <div class="home-section-visual" aria-hidden="true">
-     <img src="assets/img/Placeholder.png" alt="" class="home-section-img" loading="lazy" decoding="async">
+     <picture>
+       <source media="(max-width: 760px)" srcset="mobileImage.png">
+       <img src="webImage.png" alt="" class="home-section-img" loading="lazy" decoding="async">
+     </picture>
    </div>
   </div>
 </section>
+</div>
 
 <!-- footer -->
  <footer class="home-footer" id="contact">

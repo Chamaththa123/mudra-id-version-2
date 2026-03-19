@@ -379,11 +379,38 @@
 }
 
 /* ===== Sections ===== */
+:root {
+  --home-section-bg-purple: #f3f0ff;
+  --home-section-bg-rose: #fdf2f8;
+  --home-section-bg-blue: #eef5ff;
+  --home-section-bg-orange: #fff5eb;
+}
+
+.home-below-hero {
+  background: linear-gradient(
+    180deg,
+    var(--home-section-bg-purple) 0%,
+    var(--home-section-bg-rose) 26%,
+    var(--home-section-bg-blue) 52%,
+    var(--home-section-bg-orange) 78%,
+    var(--home-section-bg-purple) 100%
+  );
+}
+
 .home-section {
-  background: #fff;
   padding: 2rem 0 0;
   margin-top: 6rem;
   margin-bottom: 6rem;
+}
+
+.home-below-hero .home-section:first-child {
+  margin-top: 0;
+  padding-top: 3rem;
+}
+
+.home-below-hero .home-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 2rem;
 }
 .home-section-inner {
   max-width: 1200px;
@@ -520,7 +547,7 @@ flex-grow: 0;
 .home-section-visual:has(object) {
   position: relative;
   z-index: 11;
-  background: #fff;
+  background: transparent;
 }
 .home-section-img {
   display: block;
@@ -531,18 +558,25 @@ flex-grow: 0;
   transform: translateZ(0);
   backface-visibility: hidden;
 }
+
+/* webImage / mobileImage placeholders */
+.home-section-visual picture img {
+  border-radius: 20px;
+}
+
 .home-section-img--mobile-frame {
   height: 520px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
+  border-radius: 20px;
 }
 
 /* Keep dashed guide lines behind embedded SVG animations */
 .home-animated-svg-object {
   position: relative;
   z-index: 11;
-  background: #fff;
+  background: transparent;
 }
 
 /* Section 2: desktop = default SVG; tablet/mobile variants hidden until media queries */
@@ -553,7 +587,7 @@ flex-grow: 0;
 
 /* Section 3 (Features): two slides, one from left→center, other center→right and hide */
 .home-section3-visual {
-  background: #fff;
+  background: transparent;
 }
 .home-section3-anim-wrap {
   position: relative;
@@ -562,7 +596,7 @@ flex-grow: 0;
   aspect-ratio: 3 / 2;
   min-height: 280px;
   overflow: hidden;
-  background: #fff;
+  background: transparent;
 }
 .home-section3-slide {
   position: absolute;
@@ -595,7 +629,7 @@ flex-grow: 0;
 
 /* Section 6: two slides (A and B), same left→center / center→right animation */
 .home-section6-visual {
-  background: #fff;
+  background: transparent;
 }
 .home-section6-anim-wrap {
   position: relative;
@@ -604,7 +638,7 @@ flex-grow: 0;
   aspect-ratio: 3 / 2;
   min-height: 280px;
   overflow: hidden;
-  background: #fff;
+  background: transparent;
 }
 .home-section6-slide {
   position: absolute;
