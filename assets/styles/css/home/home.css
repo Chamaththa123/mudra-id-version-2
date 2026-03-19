@@ -410,7 +410,7 @@
 
 .home-below-hero .home-section:last-child {
   margin-bottom: 0;
-  padding-bottom: 2rem;
+  padding-bottom: clamp(2.75rem, 5vw, 4rem);
 }
 .home-section-inner {
   max-width: 1200px;
