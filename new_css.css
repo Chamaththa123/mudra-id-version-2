@@ -277,6 +277,10 @@ h1 {
   max-width: 12ch;
 }
 
+.hero h1 {
+  color: #fff;
+}
+
 .hero p.lead {
   font-size: 16px;
   /* color: var(--muted); */
