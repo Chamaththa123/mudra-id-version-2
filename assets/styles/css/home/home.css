@@ -420,6 +420,24 @@
   gap: 4rem;
   align-items: center;
 }
+
+.home-section-inner > .home-section-content,
+.home-section-inner > .home-section-visual {
+  min-width: 0;
+}
+
+.home-below-hero > .home-section:nth-child(odd) .home-section-inner > .home-section-content {
+  order: 1;
+}
+.home-below-hero > .home-section:nth-child(odd) .home-section-inner > .home-section-visual {
+  order: 2;
+}
+.home-below-hero > .home-section:nth-child(even) .home-section-inner > .home-section-content {
+  order: 2;
+}
+.home-below-hero > .home-section:nth-child(even) .home-section-inner > .home-section-visual {
+  order: 1;
+}
 .home-section-sub-inner {
   max-width: 1200px;
   margin: 0 auto;

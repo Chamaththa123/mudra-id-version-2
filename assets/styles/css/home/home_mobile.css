@@ -128,6 +128,12 @@
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
+  .home-below-hero > .home-section:nth-child(n) .home-section-inner > .home-section-content {
+    order: 1;
+  }
+  .home-below-hero > .home-section:nth-child(n) .home-section-inner > .home-section-visual {
+    order: 2;
+  }
   .home-section-sub-inner {
     grid-template-columns: 1fr;
     gap: 1.25rem;
