@@ -380,10 +380,10 @@
 
 /* ===== Sections ===== */
 :root {
-  --home-section-bg-purple: #f3f0ff;
-  --home-section-bg-rose: #fdf2f8;
-  --home-section-bg-blue: #eef5ff;
-  --home-section-bg-orange: #fff5eb;
+  --home-section-bg-purple: #f5f1ff;
+  --home-section-bg-rose: #fcf4f8;
+  --home-section-bg-blue: #f1f6ff;
+  --home-section-bg-orange: #fff8f0;
 }
 
 .home-below-hero {

@@ -326,17 +326,48 @@
       </div>
     </main>
 
-    <footer class="footer" id="contact">
-      <div class="container footer-inner">
-        <div>
-          <strong>MudraID</strong>
-          <div>Trust and identity infrastructure for AI agents.</div>
+    <footer class="footer site-footer" id="contact" role="contentinfo">
+      <div class="footer-accent" aria-hidden="true"></div>
+      <div class="container footer-main">
+        <div class="footer-brand-block">
+          <a href="#" class="footer-logo brand" aria-label="MudraID home">
+            <span class="brand-mark">M</span>
+            <span>MudraID</span>
+          </a>
+          <p class="footer-tagline">Trust and identity infrastructure for AI agents — verifiable identity, scoped delegation, and runtime verification.</p>
         </div>
-        <div class="footer-links">
-          <a href="#products">Products</a>
-          <a href="#solutions">Solutions</a>
-          <a href="#developers">Developers</a>
-          <a href="mailto:mudraid@gmail.com">mudraid@gmail.com</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <div class="footer-nav-col">
+            <p class="footer-nav-heading">Product</p>
+            <ul class="footer-nav-list">
+              <li><a href="#products">Platform</a></li>
+              <li><a href="#solutions">How it works</a></li>
+              <li><a href="#signup">Create account</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <p class="footer-nav-heading">Developers</p>
+            <ul class="footer-nav-list">
+              <li><a href="#docs">Documentation</a></li>
+              <li><a href="#signin">Governance</a></li>
+              <li><a href="mailto:mudraid@gmail.com">Email us</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-col">
+            <p class="footer-nav-heading">Legal</p>
+            <ul class="footer-nav-list">
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of service</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer-bar">
+        <div class="container footer-bar-inner">
+          <p class="footer-copyright">© <span id="footer-year"></span> MudraID. All rights reserved.</p>
+          <div class="footer-bar-links">
+            <a href="mailto:mudraid@gmail.com" class="footer-mail">mudraid@gmail.com</a>
+          </div>
         </div>
       </div>
     </footer>
@@ -352,6 +383,7 @@
       updateHeader();
       window.addEventListener('scroll', updateHeader, { passive: true });
     })();
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
   </script>
   <script src="assets/styles/js/home/home.js" defer></script>
 </body>
