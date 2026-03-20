@@ -399,8 +399,8 @@
 
 .home-section {
   padding: 2rem 0 0;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
 }
 
 .home-below-hero .home-section:first-child {
@@ -440,7 +440,7 @@
 }
 .home-section-sub-inner {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: clamp(3.25rem, 6vw, 5.5rem) auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -501,19 +501,33 @@ flex-grow: 0;
 .home-section-text:last-child {
   margin-bottom: 0;
 }
+
+.home-section-content .home-section-text:has(+ .home-section-list) {
+  margin-bottom: 0.65em;
+}
+
 .home-section-list {
   margin: 0 0 0 1.25rem;
   padding: 0;
   list-style: disc;
+  list-style-position: outside;
   font-size: 1rem;
-  line-height: 1;
+  line-height: 1.5;
+  letter-spacing: -0.01563rem;
   color: #0A0A0A;
 }
-.home-section-list li {
-  margin-bottom: 0.5rem;
+
+.home-section-content .home-section-text + .home-section-list {
+  margin-top: 0;
 }
-.home-section-list li:last-child {
-  margin-bottom: 0;
+
+.home-section-list li {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.home-section-list li + li {
+  margin-top: 0.35em;
 }
 /* Governance section: no buttons */
 .home-section-btns {
@@ -552,6 +566,21 @@ flex-grow: 0;
 .home-section-btn-secondary:hover {
   opacity: 0.85;
 }
+
+#docs .home-section-btns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+#docs .home-section-btn {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .home-section-visual {
   position: relative;
   z-index: 11;
